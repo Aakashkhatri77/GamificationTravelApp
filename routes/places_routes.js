@@ -62,7 +62,7 @@ router.delete('/places/delete/:id', function(req,res){
 router.get('/places/showall', function(req,res){
     Places.find()
     .then(function(data){
-     console.log(data)
+    //  console.log(data)
         res.status(200).json({success: true, data: data})
     })
     .catch(function(e){

@@ -62,7 +62,7 @@ function(req,res,next){
 router.get('/subplaces/showall', function(req,res){
     SubPlaces.find()
     .then(function(data){
-     console.log(data)
+    //  console.log(data)
         res.status(200).json({success: true, data: data})
     })
     .catch(function(e){
